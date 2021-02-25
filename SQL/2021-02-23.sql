@@ -13,4 +13,8 @@
     ORDER BY ID ASC
     
 -- 627. 变更性别
+    --方法一：
     UPDATE SALARY SET SEX= CASE WHEN SEX='M' THEN 'F' ELSE 'M' END
+
+    --方法二：
+    UPDATE SALARY SET SEX=IF(SEX='F','M','F')
